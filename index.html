@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newton's Laws of Motion</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 60px 20px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .laws-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .law-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .law-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .law-number {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .law-card h2 {
+            color: #667eea;
+            margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+
+        .law-statement {
+            background: #f8f9fa;
+            padding: 15px;
+            border-left: 4px solid #667eea;
+            margin: 20px 0;
+            font-style: italic;
+            border-radius: 5px;
+        }
+
+        .law-explanation {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .example {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .example h4 {
+            color: #1976d2;
+            margin-bottom: 8px;
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            padding: 40px 20px;
+            margin-top: 60px;
+        }
+
+        .formula {
+            background: #fff3cd;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            text-align: center;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Newton's Laws of Motion</h1>
+            <p class="subtitle">The Foundation of Classical Mechanics</p>
+        </header>
+
+        <div class="laws-container">
+            <!-- First Law -->
+            <div class="law-card">
+                <div class="law-number">1</div>
+                <h2>Law of Inertia</h2>
+                <div class="law-statement">
+                    An object at rest stays at rest, and an object in motion stays in motion with the same speed and direction, unless acted upon by an unbalanced force.
+                </div>
+                <p class="law-explanation">
+                    This law describes the tendency of objects to resist changes in their state of motion.
+                    Inertia is the property of matter that causes it to maintain its velocity unless a force acts upon it.
+                </p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <p>When a car suddenly stops, passengers continue moving forward due to their inertia. This is why seatbelts are essential for safety.</p>
+                </div>
+            </div>
+
+            <!-- Second Law -->
+            <div class="law-card">
+                <div class="law-number">2</div>
+                <h2>Law of Acceleration</h2>
+                <div class="law-statement">
+                    The acceleration of an object is directly proportional to the net force acting on it and inversely proportional to its mass.
+                </div>
+                <div class="formula">
+                    F = ma
+                </div>
+                <p class="law-explanation">
+                    This law provides the mathematical relationship between force, mass, and acceleration.
+                    It tells us that the same force will produce greater acceleration in lighter objects than in heavier ones.
+                </p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <p>It's easier to push an empty shopping cart than a full one. The empty cart has less mass, so the same force produces greater acceleration.</p>
+                </div>
+            </div>
+
+            <!-- Third Law -->
+            <div class="law-card">
+                <div class="law-number">3</div>
+                <h2>Law of Action-Reaction</h2>
+                <div class="law-statement">
+                    For every action, there is an equal and opposite reaction.
+                </div>
+                <p class="law-explanation">
+                    When one object exerts a force on another object, the second object simultaneously exerts a force equal in magnitude and opposite in direction on the first object.
+                </p>
+                <div class="example">
+                    <h4>Example:</h4>
+                    <p>When you jump off a small boat onto a dock, you push the boat backward as you move forward. The force you exert on the boat is equal and opposite to the force the boat exerts on you.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>Sir Isaac Newton published these laws in 1687 in his work "Philosophiæ Naturalis Principia Mathematica"</p>
+            <p style="margin-top: 10px; opacity: 0.8;">These principles laid the foundation for classical mechanics and our understanding of motion.</p>
+        </footer>
+    </div>
+</body>
+</html>
